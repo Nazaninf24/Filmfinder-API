@@ -1,3 +1,4 @@
+const apiUrl = prompt("Entrez votre clé d'API :");
 AOS.init();
 const APIURL = "http://www.omdbapi.com/?";
 const searchForm = document.getElementById("search-form");
@@ -91,4 +92,3 @@ searchForm.addEventListener("submit", (e) => {
 });
 
 
-const apiUrl = prompt("Entrez votre clé d'API :");
