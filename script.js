@@ -91,3 +91,4 @@ searchForm.addEventListener("submit", (e) => {
 });
 
 
+const apiUrl = prompt("Entrez votre clé d'API :");
