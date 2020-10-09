@@ -1,4 +1,4 @@
-const apikey = prompt("Entrez votre clé d'API :");
+
 AOS.init();
 const APIURL = "http://www.omdbapi.com/?";
 const searchForm = document.getElementById("search-form");
@@ -7,7 +7,7 @@ let details = document.getElementById("details");
 let results = document.getElementById("results");
 
 let searchMovie = (search) => {
-  let getUrl = APIURL + "apikey=" + APIKEY + "&s=" + search;
+  let getUrl = APIURL + "apikey=" + apikey + "&s=" + search;
   fetch(getUrl)
     .then((response) => response.json())
     .then((response) => {
@@ -44,7 +44,7 @@ let showResults = (movies) => {
 };
 
 let getDetails = (imdbID) => {
-  let getUrl = APIURL + "apikey=" + APIKEY + "&i=" + imdbID;
+  let getUrl = APIURL + "apikey=" + apikey + "&i=" + imdbID;
   fetch(getUrl)
     .then((response) => response.json())
     .then((response) => {
